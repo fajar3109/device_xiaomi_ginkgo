@@ -4,7 +4,7 @@
 
 on early-init
     # Disable EAS
-    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 0
 
     # Boost schedtune
     write /dev/stune/schedtune.boost 50
@@ -84,7 +84,7 @@ on property:persist.sys.device_provisioned=1
 
 on property:sys.boot_completed=1
     # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 1
 
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
@@ -140,4 +140,4 @@ on charger
     write /sys/class/leds/red/brightness 255
 
     # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    write /proc/sys/kernel/sched_energy_aware 1
