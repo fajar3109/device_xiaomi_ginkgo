@@ -14,18 +14,20 @@
  * limitations under the License.
  */
 
-#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
-#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
+#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_2_BIOMETRICSFINGERPRINT_H
+#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_2_BIOMETRICSFINGERPRINT_H
 
 #include <hardware/fingerprint.h>
 
-#include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
+#include <hidl/MQDescriptor.h>
+#include <hidl/Status.h>
+#include <android/hardware/biometrics/fingerprint/2.2/IBiometricsFingerprint.h>
 
 namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_2 {
 namespace implementation {
 
 using ::android::sp;
@@ -45,10 +47,9 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static IBiometricsFingerprint* getInstance();
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint
-    // follow.
-    Return<uint64_t> setNotify(
-            const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_2::IBiometricsFingerprint follow.
+    Return<uint64_t> setNotify(const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
+
     Return<uint64_t> preEnroll() override;
     Return<RequestStatus> enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid,
                                  uint32_t timeoutSec) override;
@@ -75,10 +76,10 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 };
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_2
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace android
 
-#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
+#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_2_BIOMETRICSFINGERPRINT_H

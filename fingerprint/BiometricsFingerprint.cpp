@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.ginkgo"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.2-service.ginkgo"
 
 #include <log/log.h>
 
@@ -26,7 +26,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_2 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -390,7 +390,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
 }
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_2
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
