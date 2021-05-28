@@ -29,6 +29,10 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, vendor/banana/config/common.mk)
 
+# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+RELAX_USES_LIBRARY_CHECK := true
+
 # Device identifier
 PRODUCT_NAME := banana_ginkgo
 PRODUCT_DEVICE := ginkgo
