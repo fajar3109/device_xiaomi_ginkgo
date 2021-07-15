@@ -749,6 +749,9 @@
         <item>"/system/lib64/libblas.so"</item>
     </string-array>
 
+     <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">false</bool>
+
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 
