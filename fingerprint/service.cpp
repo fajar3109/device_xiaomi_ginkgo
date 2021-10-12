@@ -25,6 +25,7 @@ using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
 // Generated HIDL files
+using android::sp;
 using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
 using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
 
@@ -46,5 +47,5 @@ int main() {
 
     joinRpcThreadpool();
 
-    return 0; // should never get here
+    return 0;  // should never get here
 }
