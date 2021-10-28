@@ -182,6 +182,7 @@ ro.incremental.enable=1
 ro.hardware.keystore_desede=true
 
 # Perf
+ro.vendor.perf.scroll_opt=true
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # RIL
