@@ -341,6 +341,7 @@ PRODUCT_PACKAGES += \
     init.ginkgo.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.performance_level.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
