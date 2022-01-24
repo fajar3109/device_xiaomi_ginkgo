@@ -6,6 +6,6 @@ cc_binary {
         "libbase",
     ],
     include_dirs: [
-        "system/core/base/include",
+        "system/libbase/include",
     ]
 }
