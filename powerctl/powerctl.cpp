@@ -6,7 +6,7 @@
 
 #define THERMAL_SCONFIG "/sys/class/thermal/thermal_message/sconfig"
 #define THERMAL_LEVEL_DEFAULT 0
-#define THERMAL_LEVEL_GAMING 13
+#define THERMAL_LEVEL_GAMING 9
 #define THERMAL_LEVEL_BENCHMARK 10
 
 #define POWERCFG_EXEC "/system/bin/sh /data/powercfg.sh"
