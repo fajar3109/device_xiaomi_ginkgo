@@ -6,6 +6,8 @@ on property:sys.performance.level=0
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1017600
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1056000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1305600 4:1401600"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 320
     write /sys/class/kgsl/kgsl-3d0/throttling 1
     write /proc/sys/kernel/sched_energy_aware 1
@@ -14,6 +16,8 @@ on property:sys.performance.level=1
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 128
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 864000
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 902400
+    write /sys/module/cpu_boost/parameters/input_boost_ms 80
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:864000 4:902400"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 320
     write /sys/class/kgsl/kgsl-3d0/throttling 1
     write /proc/sys/kernel/sched_energy_aware 1
@@ -22,6 +26,8 @@ on property:sys.performance.level=2
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1017600
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1056000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1017600 4:1056000"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 465
     write /sys/class/kgsl/kgsl-3d0/throttling 1
     write /proc/sys/kernel/sched_energy_aware 1
@@ -30,6 +36,8 @@ on property:sys.performance.level=3
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1305600
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1401600
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1305600 4:1401600"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 600
     write /sys/class/kgsl/kgsl-3d0/throttling 0
     write /proc/sys/kernel/sched_energy_aware 0
@@ -38,6 +46,8 @@ on property:sys.performance.level=4
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1420800
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1536000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1420800 4:1536000"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 820
     write /sys/class/kgsl/kgsl-3d0/throttling 0
     write /proc/sys/kernel/sched_energy_aware 0
@@ -46,6 +56,8 @@ on property:sys.performance.level=5
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1804800
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 2016000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1804800 4:2016000"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 950
     write /sys/class/kgsl/kgsl-3d0/throttling 0
     write /proc/sys/kernel/sched_energy_aware 0
@@ -54,6 +66,8 @@ on property:sys.performance.level=6
     write /sys/module/cpu_input_boost/parameters/input_boost_duration 32
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1804800
     write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 2016000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 20
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1804800 4:2016000"
     write /sys/class/kgsl/kgsl-3d0/min_clock_mhz 950
     write /sys/class/kgsl/kgsl-3d0/throttling 0
     write /proc/sys/kernel/sched_energy_aware 0
