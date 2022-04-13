@@ -78,4 +78,7 @@
 
     <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
     <integer translatable="false" name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+
+    <!-- Default access point SSID used for tethering -->
+    <string translatable="false" name="wifi_tether_configure_ssid_default">Redmi Note 8</string>
 </resources>
