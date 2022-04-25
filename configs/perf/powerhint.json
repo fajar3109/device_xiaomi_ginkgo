@@ -142,7 +142,7 @@
     },
     {
       "Name": "F2fsRecessModeEnable",
-      "Path": "/sys/fs/f2fs/sda32/gc_urgent",
+      "Path": "/sys/fs/f2fs/mmcblk0p87/gc_urgent",
       "Values": [
         "2",
         "0"
