@@ -145,6 +145,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor
 
+
+# Camera
+PRODUCT_PACKAGES += \
+    GrapheneOS-Camera \
+    
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
