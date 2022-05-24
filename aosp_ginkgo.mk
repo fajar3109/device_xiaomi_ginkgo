@@ -23,12 +23,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common Potato Stuff
+# Inherit some common Arcana Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+ARCANA_MAINTAINER := fajar3109
+WITH_GAPPS := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_NOW_PLAYING := true
+USE_PIXEL_CHARGER_IMAGES := true
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Device identifier
-PRODUCT_NAME := potato_ginkgo
+PRODUCT_NAME := aosp_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
