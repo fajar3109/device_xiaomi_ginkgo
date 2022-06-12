@@ -1,0 +1,6 @@
+add_hwservice(hal_bluetooth_default, hal_bt_channel_avoidance_hwservice)
+
+allow hal_bluetooth_default hal_bt_channel_avoidance_hwservice:hwservice_manager find;
+
+# disable logspam
+dontaudit hal_bluetooth_default vendor_diag_device:chr_file { read write };

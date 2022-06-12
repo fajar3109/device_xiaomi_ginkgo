@@ -1,0 +1,6 @@
+# Daemon
+/system/bin/decrypt_charger                           u:object_r:charger_exec:s0
+
+# Files in rootfs
+/bt_firmware(/.*)?                                    u:object_r:bt_firmware_file:s0
+/firmware(/.*)?                                       u:object_r:firmware_file:s0

@@ -167,11 +167,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Sepolicy - Common
+# Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-
-# Sepolicy - Ginkgo
-include device/xiaomi/ginkgo-sepolicy/ginkgo-sepolicy.mk
+include device/xiaomi/ginkgo/sepolicy/ginkgo-sepolicy.mk
 
 # Treble
 BOARD_VNDK_VERSION := current

@@ -1,0 +1,6 @@
+# Allow appdomain to get persist_camera_prop
+get_prop(system_server, vendor_camera_prop)
+get_prop(system_server, vendor_persist_camera_prop)
+
+# Fingerprint
+get_prop(system_server, vendor_fp_prop)

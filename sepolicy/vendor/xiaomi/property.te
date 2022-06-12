@@ -1,0 +1,8 @@
+# Fingerprint
+system_public_prop(vendor_fp_prop)
+
+# IR
+system_public_prop(lirc_prop)
+
+# Thermal
+system_public_prop(thermal_engine_prop)
