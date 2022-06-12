@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ginkgo.mk
+    $(LOCAL_DIR)/xdroid_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_ginkgo-userdebug
+    xdroid_ginkgo-userdebug

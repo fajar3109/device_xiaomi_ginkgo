@@ -42,18 +42,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit xdroidOSS stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
-# PixelExperience specifics
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_USES_AOSP_RECOVERY := true
+# xdroidOSS specifics
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := fajar3109
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifiers
-PRODUCT_NAME := aosp_ginkgo
+PRODUCT_NAME := xdroid_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
