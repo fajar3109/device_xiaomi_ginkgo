@@ -47,7 +47,7 @@ $(call inherit-product, vendor/xdroid/config/common.mk)
 
 # xdroidOSS specifics
 XDROID_BOOT := 1080
-XDROID_MAINTAINER := fajar3109
+XDROID_MAINTAINER := fajar3109 x rthelolchex
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
